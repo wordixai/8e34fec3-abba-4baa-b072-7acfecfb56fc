@@ -1,18 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
 All colors MUST be HSL.
 The @apply directive should not be used with the group utility class.
 */
 
 @layer base {
   :root {
-   
+    --background: 42 39% 85%;
+    --foreground: 30 15% 25%;
+    --card: 0 0% 100%;
+    --card-foreground: 30 15% 25%;
+    --primary: 28 80% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 30 40% 70%;
+    --secondary-foreground: 30 15% 25%;
+    --muted: 30 20% 90%;
+    --muted-foreground: 30 10% 40%;
+    --accent: 45 90% 60%;
+    --accent-foreground: 30 15% 25%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 30 20% 70%;
+    --input: 30 20% 80%;
+    --ring: 28 80% 52%;
+    --radius: 0.5rem;
   }
 
-  .dark {
+  * {
+    font-family: 'Caveat', cursive;
+  }
 
+  body {
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 }
